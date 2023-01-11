@@ -1,8 +1,32 @@
+:root{
+     --primary-color:rgb(139, 73, 244);
+     --secondary-color:maroon;
+}
 *{
      margin:0;
      padding:0;
      box-sizing: border-box;;
 }
 body{
-     background-color: brown;
+     // background-color: var(--primary-color);
+}
+header,footer {
+     background-color: var(--primary-color);
+     height: 75px;
+     text-align: center;
+}
+main{
+     width: 95vw;
+     margin: 20px auto;
+}
+#container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     div{
+          margin: 10px;
+          width: 45vw;
+          height: 30vh;
+          border: 2px solid var(--secondary-color);
+     }
 }

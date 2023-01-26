@@ -20,22 +20,51 @@ main {
   margin: 20px auto;
 }
 
-#container {
+#mainContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
-#container div {
-  margin: 10px;
-  width: 45vw;
+#mainContainer .mainItem {
+  width: 400px;
   height: 30vh;
-  border: 2px solid var(--secondary-color);
+  margin: 10px auto;
+  background: rgba(165, 163, 189, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(165, 163, 189, 0.45);
+}
+#mainContainer .mainItem a {
+  text-decoration: none;
+  text-align: center;
 }
 
 #container {
   display: flex;
 }
 #container .card {
-  width: 45vw;
   margin: 25px auto;
+  padding: 20px;
+  width: 35vw;
+  height: 80vh;
+  background: rgba(165, 163, 189, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(165, 163, 189, 0.45);
+}
+#container .card fieldset {
+  border-radius: 16px;
+}
+#container .card #generatedPwd {
+  height: 4em;
+  width: 15em;
+  font-size: large;
+  text-align: center;
+}
+
+fieldset * {
+  margin: 15px;
 }

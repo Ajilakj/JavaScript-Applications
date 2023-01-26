@@ -4,6 +4,7 @@
 let possibleCharacters;
 let passwordLength;
 let generateBtn = document.getElementById("generateBtn");
+let tryAgainBtn = document.getElementById("tryAgainBtn");
 
 
 //getting input from user and setting possible characters
@@ -69,3 +70,6 @@ function writePassword() {
 // Add event listener to generate button
 // generateBtn.addEventListener("click", writePassword);
 generateBtn.addEventListener("click", getInputFromUser);
+tryAgainBtn.addEventListener("click", function reload(){
+  document.location.reload();
+});

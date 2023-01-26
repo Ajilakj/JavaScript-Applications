@@ -30,3 +30,13 @@ main{
           border: 2px solid var(--secondary-color);
      }
 }
+#container{
+     display: flex;
+     .card{
+          width: 45vw;
+          margin: 25px auto;
+     }
+}
+// input{
+//      display: block;
+// }

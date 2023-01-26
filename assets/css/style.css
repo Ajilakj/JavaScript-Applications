@@ -31,3 +31,11 @@ main {
   height: 30vh;
   border: 2px solid var(--secondary-color);
 }
+
+#container {
+  display: flex;
+}
+#container .card {
+  width: 45vw;
+  margin: 25px auto;
+}

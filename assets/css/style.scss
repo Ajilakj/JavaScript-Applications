@@ -30,13 +30,37 @@ main{
           border: 2px solid var(--secondary-color);
      }
 }
-#container{
-     display: flex;
-     .card{
-          width: 45vw;
-          margin: 25px auto;
-     }
-}
 // input{
 //      display: block;
 // }
+#container {
+     // padding:20px 40px 40px 40px;
+     // background: rgba(255, 255, 255, 0.04);
+     // border-radius: 16px;
+     // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     // backdrop-filter: blur(4px);
+     // -webkit-backdrop-filter: blur(4px);
+     // border: 1px solid rgba(255, 255, 255, 0.45);
+     // margin:20px auto; 
+     .card{
+          margin:25px auto;
+          padding:20px;
+          width:35vw;
+          height: 60vh;
+          background: rgba(165, 163, 189, 0);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(10.3px);
+          -webkit-backdrop-filter: blur(10.3px);
+          border: 1px solid rgba(165, 163, 189, 0.45);
+          #generatedPwd{
+               height: 4em;
+               width: 15em;
+               font-size: large;
+          }
+      }
+ }
+
+ fieldset *{
+     margin:15px;
+}

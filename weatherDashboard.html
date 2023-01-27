@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Weather Dashboard</title>
+     <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body>
+     <header>
+          <h1>Weather Dashboard</h1>
+     </header>
+     <body>
+          <main>
+               <aside>
+                    <h2>Search for a city:</h2>
+                    <input type="text" name="search" id="search">
+                    <input type="button" value="Search" id="searchBtn">
+                    <div id="previous-search"></div>
+                    <div id="button"></div>
+               </aside>
+               <section>
+                    <div id="city-details">
+                         <h2 id="city"></h2><img id="icon">
+                         <p>Temp: <span id="city-temp"></span></p>
+                         <p>Wind: <span  id="city-wind"></span></p>
+                         <p>Humidity: <span  id="city-humidity"></span></p>
+                    </div>
+                    <h3>5 day forcast</h3>
+                    <div id="forcast">
+                         <div class="card">
+                              <p id="date1"></p>
+                              <img id="icon1">
+                              <p>Temp: <span  id="temp1"></span></p>
+                              <p>Wind: <span  id="wind1"></span></p>
+                              <p>Humidity: <span id="humidity1"></span></p>
+                         </div>
+                         <div class="card">
+                              <p id="date2"></p>
+                              <img id="icon2">
+                              <p>Temp: <span  id="temp2"></span></p>
+                              <p>Wind: <span  id="wind2"></span></p>
+                              <p>Humidity: <span id="humidity2"></span></p>
+                         </div>
+                         <div class="card">
+                              <p id="date3"></p>
+                              <img id="icon3">
+                              <p>Temp: <span  id="temp3"></span></p>
+                              <p>Wind: <span  id="wind3"></span></p>
+                              <p>Humidity: <span id="humidity3"></span></p>
+                         </div>
+                         <div class="card">
+                              <p id="date4"></p>
+                              <img id="icon4">
+                              <p>Temp: <span  id="temp4"></span></p>
+                              <p>Wind: <span  id="wind4"></span></p>
+                              <p>Humidity: <span id="humidity4"></span></p>
+                         </div>
+                         <div class="card">
+                              <p id="date5"></p>
+                              <img id="icon5">
+                              <p>Temp: <span  id="temp5"></span></p>
+                              <p>Wind: <span  id="wind5"></span></p>
+                              <p>Humidity: <span id="humidity5"></span></p>
+                         </div>
+                   </div>
+               </section>
+          </main>
+     </body>
+     <footer>
+          &copy Ajila K Johnkutty @ 2022
+     </footer>
+     <script src="./assets/js/weatherDashboard.js"></script>
+</body>
+</html>

@@ -21,8 +21,7 @@ main {
 }
 
 #mainContainer {
-  display: flex;
-  flex-wrap: wrap;
+
 }
 #mainContainer .mainItem {
   width: 400px;

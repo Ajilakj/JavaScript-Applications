@@ -74,3 +74,24 @@ main{
  fieldset *{
      margin:15px;
 }
+.sectionHide{
+     /* display: none;   */
+     visibility:hidden;
+}
+.sectionVisible{
+     /* display:inline; */
+     visibility: visible;
+}
+#weather{
+     display: flex;
+     margin: 10px;
+     #city-details{
+          border: 5px blueviolet dotted;
+          padding: 10px;
+     }
+     .card{
+          width:15vw;
+          height:50vh;
+          margin: 5px;
+     }
+}

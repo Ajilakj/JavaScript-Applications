@@ -66,7 +66,7 @@ main {
 }
 
 fieldset * {
-  margin: 15px;
+  margin: 10px;
 }
 
 .sectionHide {
@@ -83,12 +83,10 @@ fieldset * {
   display: flex;
   margin: 10px;
 }
-
 #weather #city-details {
   border: 5px blueviolet dotted;
   padding: 10px;
 }
-
 #weather .card {
   width: 15vw;
   height: 50vh;

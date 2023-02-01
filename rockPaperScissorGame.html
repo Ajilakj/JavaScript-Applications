@@ -4,18 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock paper Scissor Game</title>
+  <title>Rock Paper Scissor Game</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-     <div id="score-card">
-          <h2>Rock paper Scissor Game</h2>
-          <h3>Score Board:</h3>
-          <p id="user"></p>
-          <p id="computer"></p>
-          <p id="tie"></p>
-     </div>
+  <main>
+    <h2>Rock Paper Scissor Game</h2>
+    <section id="container">
+      <div class="card">
+        <fieldset class="rps">
+          <legend>Your selection</legend>
+          <input type="radio" value="R" name="user" id="userRock">Rock
+          <input type="radio" value="P" name="user" id="userPaper">Paper
+          <input type="radio" value="S" name="user" id="userScissor">Scissor
+          <input type="button" value="Select" id="selectBtn">
+          <p id="error"></p>
+        </fieldset>
+        <fieldset class="rps" id="computer" disabled>
+          <legend>Computer's selection</legend>
+          <input type="radio" value="R" name="computer" id="computerRock">Rock
+          <input type="radio" value="P" name="computer" id="computerPaper">Paper
+          <input type="radio" value="S" name="computer" id="computerScissor">Scissor
+        </fieldset>
+        <input type="button" value="Restart" id="restartBtn">
+      </div>
+        <div class="card" id="score-card">
+            <h3>Score Board:</h3>
+            <ul id="result"></ul>
+       </div>
+       <div class="card" id="final-score-card">
+        <h3>Final Score Board:</h3>
+        <p id="userWon"></p>
+        <p id="computerWon"></p>
+        <p id="tie"></p>
+   </div>
+    </section>
+  </main>
+  
   <script src="./assets/js/rockPaperScissorGame.js"></script>
 
 </body>

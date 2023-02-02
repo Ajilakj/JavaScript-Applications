@@ -102,7 +102,7 @@ fieldset * {
   margin: 10px;
 }
 #weather #city-details {
-  border: 5px blueviolet dotted;
+  border: 5px var(--primary-color) dotted;
   padding: 10px;
 }
 #weather .card {

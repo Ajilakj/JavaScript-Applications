@@ -108,7 +108,7 @@ main{
      display: flex;
      margin: 10px;
      #city-details{
-          border: 5px blueviolet dotted;
+          border: 5px var(--primary-color) dotted;
           padding: 10px;
      }
      .card{

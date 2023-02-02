@@ -120,6 +120,6 @@ fieldset * {
   border-radius: 25%;
 }
 
-h1 {
-  text-align: left;
+.error {
+  color: red;
 }

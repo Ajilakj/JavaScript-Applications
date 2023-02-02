@@ -18,8 +18,12 @@ header, footer {
   color: azure;
   height: 75px;
   display: flex;
-  flex-direction: column;
+  flex-basis: 1 2;
   align-items: center;
+  justify-content: space-between;
+}
+
+footer {
   justify-content: center;
 }
 
@@ -109,4 +113,13 @@ fieldset * {
 
 .rps {
   display: flex;
+}
+
+#home {
+  height: 50px;
+  border-radius: 25%;
+}
+
+h1 {
+  text-align: left;
 }

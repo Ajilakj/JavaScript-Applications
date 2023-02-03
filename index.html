@@ -5,15 +5,22 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Applications using JavaScript</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
      <header>
           <a href="./index.html"><img id="home" src="./assets/images/home.png" alt="image of home"></a>
           <h1>JavaScript Applications</h1>
-          <ul><li>1</li>
-          <li>2</li>
-          <li>3</li></ul>
+          <div class="dropdown">
+               <button class="dropbtn">You can go to</button>
+               <div class="dropdown-content">
+                    <a href="./passwordGenerator.html" target="_blank">Password Generator</a>
+                    <a href="./weatherDashboard.html" target="_blank">Weather Dashboard</a>
+                    <a href="./interactiveQuiz.html" target="_blank">Interactive Quiz</a>
+                    <a href="./rockPaperScissorGame.html" target="_blank">Rock Paper Scissor Game</a>
+               </div>
+          </div>
      </header>
      <main>
           <!-- <h2>Technologies used: JavaScript, SASS, CSS, HTML</h2> -->
@@ -27,5 +34,7 @@
           </fieldset>
      </main>
      <footer>&copy Ajila K Johnkutty @ 2023</footer>
+     <script src="./assets/js/index.js"></script>
+     
 </body>
 </html>

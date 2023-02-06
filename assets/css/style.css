@@ -28,7 +28,7 @@ main {
   max-width: 1200px;
   height: 75px;
   display: flex;
-/*   flex-basis: 1 2; */
+  flex-basis: 1 2;
   align-items: center;
 }
 
@@ -78,11 +78,12 @@ main {
 }
 #container .card {
   margin: 25px auto;
-  padding: 20px;
+  padding: 40px;
   width: 35vw;
-  height: 80vh;
+  height: 90vh;
   background: rgba(165, 163, 189, 0);
   border-radius: 16px;
+  box-shadow: 20px 20px 30px rgba(5, 60, 19, 0.629);
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(165, 163, 189, 0.45);
@@ -97,8 +98,12 @@ main {
   text-align: center;
 }
 
+fieldset {
+  padding: 40px;
+}
+
 fieldset * {
-  margin: 10px;
+  padding-right: 20px;
 }
 
 .sectionHide {
@@ -130,12 +135,17 @@ header #home {
 }
 #weather .card {
   width: 15vw;
-  height: 50vh;
+  height: 75vh;
   margin: 5px;
+}
+
+input {
+  margin: 20px 10px 0px 0px;
 }
 
 .rps {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .dropbtn {

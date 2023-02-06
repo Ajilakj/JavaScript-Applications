@@ -25,13 +25,13 @@ header, footer {
   justify-content: space-between;
 }
 
-footer {
-  justify-content: center;
-}
-
 main {
   width: 95vw;
   margin: 20px auto;
+}
+
+footer {
+  justify-content: center;
 }
 
 #mainContainer {
@@ -43,9 +43,9 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 500px;
-  margin: 10px auto;
+  margin: 50px auto;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 30px rgba(48, 10, 152, 0.1);
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
   border: 1px solid rgba(165, 163, 189, 0.45);
@@ -55,9 +55,16 @@ main {
   text-decoration: none;
   text-align: center;
 }
+#mainContainer .mainItem a:hover {
+  box-shadow: 20px 20px 30px rgba(48, 10, 152, 0.7);
+}
 #mainContainer .mainItem img {
   max-width: 500px;
   border-radius: 16px 16px 0px 0px;
+  padding: 60px 60px 0 60px;
+}
+#mainContainer .mainItem p {
+  padding: 60px;
 }
 
 #container {
@@ -99,6 +106,15 @@ fieldset * {
   visibility: visible;
 }
 
+#home {
+  height: 50px;
+  border-radius: 25%;
+}
+
+.error {
+  color: red;
+}
+
 #weather {
   display: flex;
   margin: 10px;
@@ -115,15 +131,6 @@ fieldset * {
 
 .rps {
   display: flex;
-}
-
-#home {
-  height: 50px;
-  border-radius: 25%;
-}
-
-.error {
-  color: red;
 }
 
 .dropbtn {

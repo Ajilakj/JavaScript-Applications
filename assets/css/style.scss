@@ -2,16 +2,19 @@
      --primary-color:rgb(5, 60, 19);
      --secondary-color:rgb(139, 73, 244);
 }
+
 *{
      margin:0;
      padding:0;
      box-sizing: border-box;;
 }
+
 body{
      font-family:Arial, Helvetica, sans-serif;
      max-width: 1200px;
      margin: 0 auto;
 }
+
 header,footer {
      background-color: var(--primary-color);
      color: azure;
@@ -22,13 +25,16 @@ header,footer {
      align-items: center;
      justify-content:space-between;
 }
-footer {
-     justify-content:center;
-}
+
 main{
      width: 95vw;
      margin: 20px auto;
 }
+
+footer {
+     justify-content:center;
+}
+
 #mainContainer{
      display: flex;
      flex-wrap: wrap;
@@ -38,10 +44,10 @@ main{
           justify-content: center;
           width: 500px;
           // height: 30vh;
-          margin: 10px auto;
+          margin:50px auto;
           // background: rgba(165, 163, 189, 0);
           border-radius: 16px;
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 20px 20px 30px rgba(48, 10, 152, 0.1);
           backdrop-filter: blur(10.3px);
           -webkit-backdrop-filter: blur(10.3px);
           border: 1px solid rgba(165, 163, 189, 0.45);
@@ -52,10 +58,17 @@ main{
                text-align: center;
 
           }
+          a:hover{
+               box-shadow: 20px 20px 30px rgba(48, 10, 152, 0.7);
+          }
           img{
                max-width: 500px;
                border-radius: 16px 16px 0px 0px;
+               padding:60px 60px  0 60px;
                // border-radius: 50%;
+          }
+          p{
+               padding:60px;
           }
      }
 }
@@ -95,17 +108,29 @@ main{
       }
  }
 
- fieldset *{
+fieldset *{
      margin:10px;
 }
+
 .sectionHide{
      /* display: none;   */
      visibility:hidden;
 }
+
 .sectionVisible{
      /* display:inline; */
      visibility: visible;
 }
+
+#home{
+     height: 50px;
+     border-radius: 25%;
+}
+
+.error{
+     color: red;
+}
+
 #weather{
      display: flex;
      margin: 10px;
@@ -119,18 +144,10 @@ main{
           margin: 5px;
      }
 }
+
 .rps{
      display: flex;
 }
-#home{
-     height: 50px;
-     border-radius: 25%;
-}
-.error{
-     color: red;
-}
-
-
 
 
 .dropbtn {

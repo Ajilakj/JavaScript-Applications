@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Source Sans Pro;
   margin: 0 auto;
 }
 
@@ -175,6 +175,22 @@ input {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
+header .inner-wrapper {
+  padding: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .inner-wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 75px 0;
 }
 
 .dropdown-content a:hover {

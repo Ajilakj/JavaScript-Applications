@@ -1,6 +1,8 @@
 # JavaScript-Applications
 
 ![](./assets/images/screenshot.png)
+
+
 [To visit my JavaScript-Applications App]( https://ajilakj.github.io/JavaScript-Applications/)
 
 ## Description

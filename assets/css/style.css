@@ -10,18 +10,33 @@
 }
 
 body {
-  font-family: Source Sans Pro;
+  font-family: Source Sans Pro, Helvetica, sans-serif;
   margin: 0 auto;
 }
 
 header, footer {
   background-color: var(--primary-color);
-  color: azure;
+  color: beige;
 }
 
-main {
-  max-width: 1200px;
-  margin: 20px auto;
+h1, h2, h3 {
+  font-family: Nunito Sans, Helvetica, sans-serif;
+}
+
+input {
+  margin: 20px 10px 0px 0px;
+}
+
+input[type=text] {
+  height: 50px;
+}
+
+input[type=button], button {
+  background-color: var(--primary-color);
+  color: azure;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
 }
 
 #header, #footer {
@@ -107,12 +122,10 @@ fieldset * {
 }
 
 .sectionHide {
-  /* display: none;   */
   visibility: hidden;
 }
 
 .sectionVisible {
-  /* display:inline; */
   visibility: visible;
 }
 
@@ -130,17 +143,17 @@ header #home {
   margin: 10px;
 }
 #weather #city-details {
-  border: 5px var(--primary-color) dotted;
   padding: 10px;
+  box-shadow: 20px 20px 30px rgba(5, 60, 19, 0.629);
+  border-radius: 16px;
+  border: 1px solid rgba(165, 163, 189, 0.45);
+  width: 75vw;
+  height: 45vh;
 }
 #weather .card {
   width: 15vw;
   height: 75vh;
   margin: 5px;
-}
-
-input {
-  margin: 20px 10px 0px 0px;
 }
 
 .rps {
@@ -181,15 +194,14 @@ header .inner-wrapper {
   padding: 5px;
   max-width: 1200px;
   margin: 0 auto;
-  color: beige;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-main .inner-wrapper {
+main.inner-wrapper {
+  max-width: 1200px;
   margin: 0 auto;
-  max-width: 1000px;
   padding: 75px 0;
 }
 

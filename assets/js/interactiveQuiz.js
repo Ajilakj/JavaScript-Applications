@@ -28,14 +28,15 @@ let previous;
 function init(){
      index=0;
     // displayPreviousScore(previousScoreFromLocal);
+//     alert("inside init");
      question.classList.add("sectionHide");
      finalScore.classList.add("sectionHide");
      restart.classList.add("sectionHide");
 }
 
 function displayPreviousScore(previousScoreFromLocal){
+     // alert("inside displayPreviousScore");
      if(previousScoreFromLocal===null || previousScoreFromLocal===0){
-          alert("inside if");
           previous=0;
      }
      else{
@@ -54,6 +55,7 @@ function displayPreviousScore(previousScoreFromLocal){
 
 // will clear the local storage
 clearBtn.addEventListener("click", function() {
+     // alert("inside clearBtn.addEventListener");
      localStorage.setItem("previousScoreLocal", 0);
      document. location. reload();
 });
@@ -61,11 +63,13 @@ clearBtn.addEventListener("click", function() {
 
 // restart button click event listner (start from the beginning)
 restartBtn.addEventListener("click", function() {
+     // alert("inside restartBtn.addEventListener");
     document. location. reload();
 });
 
 
 function restartAndClear(){
+     // alert("inside restartAndClear");
      restart.classList.add("sectionVisible");
 }
 
@@ -73,6 +77,7 @@ function restartAndClear(){
 // will allow user to enter initial and submit score
 // then page will reload
 submitBtn.addEventListener("click", function() {
+     // alert("inside submitBtn.addEventListener");
      var retrieveArray = localStorage.getItem("previousScoreLocal");
      var stored=[]
      if(retrieveArray!==null || retrieveArray!==0){
@@ -93,12 +98,14 @@ submitBtn.addEventListener("click", function() {
 
 // final score either time left 0 OR end of questions   
 function displayResult(){
+     // alert("inside displayResult");
      finalScore.classList.add("sectionVisible");
      document.getElementById("score").textContent="Final Score: You attended "+index+" questions. "+correct+" correct answers. Your score is "+correct*5 +" Enter your initials then press submit to keep your information";
 }
 
 // to display questions one by one and the 4 options
 function displayQuestion(){
+     // alert("inside displayQuestion");
      if(index<dataArray.answer.length && timeLeft>0){
           document.getElementById("questions").textContent=dataArray.question[index];
           var currentQuestionOptions=dataArray.options[index];
@@ -115,11 +122,13 @@ function displayQuestion(){
 
 // function to manage time left
 function timeDecrement(){
+     // alert("inside timeDecrement");
      document.getElementById("timeLeft").textContent="Time left: "+timeLeft;
 }
 
 // to check the answer against user selection
 function checkAnswer(fromUser){
+     // alert("inside checkAnswer");
      if(fromUser===dataArray.answer[index]){
           correct++;
           document.getElementById("result").textContent="Correct";
@@ -130,7 +139,7 @@ function checkAnswer(fromUser){
           }
           wrong++;
           document.getElementById("result").textContent="Wrong";
-          timeDecrement();
+          // timeDecrement();
      }
      index++;
      displayQuestion();
@@ -153,11 +162,13 @@ opt4.addEventListener("click", function() {
 // start button click event listner
 // will display questions and options
 startBtn.addEventListener("click", function() {
+     // alert("inside startBtn.addEventListener");
      document.getElementById("questionsAndOptions").classList.add("sectionVisible");
-     init();
-     timeDecrement();
-     displayQuestion();
+     // init();
+     // timeDecrement();
+
      start.style.display = "none";
+     displayQuestion();
 });
 
 // application start here

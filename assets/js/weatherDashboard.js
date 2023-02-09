@@ -9,8 +9,8 @@ var longitude;
 var queryURL;
 var queryUrlFive;
 var searchBtn=document.getElementById("searchBtn");
-
-
+var listTag = document.createElement("ul");
+document.getElementById("button").appendChild(listTag);
 
 
 //to get city name from user  
@@ -19,10 +19,12 @@ searchBtn.addEventListener("click", function(){
      previousCity.push(searchCity);
      localStorage.setItem("previousCity",previousCity);
      // to create buttons and append
+     var listItemTag = document.createElement("li");
+     listTag.appendChild(listItemTag);
      var buttonTag = document.createElement("button");
      const textForBtn = document.createTextNode(searchCity);
      buttonTag.appendChild(textForBtn);
-     document.getElementById("button").appendChild(buttonTag);
+     listItemTag.appendChild(buttonTag);
      cityWeather(searchCity);   
 });
 

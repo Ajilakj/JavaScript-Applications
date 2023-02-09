@@ -12,11 +12,18 @@ It is a website contains 4 applications using JavaScript.
 3. Interactive JavaScript quiz: A quiz based on Javascript. You can select answer from the 4 options
 4. Rock, Paper Scissor game: User can play this game against computer
 
-## Installation
-N/A
 
 ## Usage
 - To use this website you can either select one card from home page or select one link from top right corner
 - Then you will redirect to JavaScript applications pages
 
+## Technologies
 
+- SASS
+- JavaScript
+- API
+- CSS
+- HTML
+
+## Installation
+N/A
